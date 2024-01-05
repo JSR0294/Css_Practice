@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+section{
+    height: 100vh;
+    background: url(../img/blurred-abstract-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 15px 90px;
+    position: relative;
+    border: none;
+    transition: .4s ease-in;
+    -webkit-transition: .4s ease-in;
+    -moz-transition: .4s ease-in;
+    -ms-transition: .4s ease-in;
+    -o-transition: .4s ease-in;
+    z-index: 1;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+button::before,
+button::after{
+    position: absolute;
+    content: "";
+    z-index: -1;
+}
+
+/*======= button 1 =======*/
+.btn-1:hover {
+    box-shadow: inset -167px 0 0 0 #ff96ad, inset 167px 0 0 0 #ff96ad;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
+
+/*======= button 2 =======*/
+.btn-2::after{
+    height: 0;
+    left: 0;
+    top: 0;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+.btn-2:hover::after{
+    height: 100%;
+    background-color: #ff96ad;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
+
+/*======= button 3 =======*/
+.btn-3::after{
+    height: 0;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.5s;
+    width: 100%;
+}
+.btn-3:hover::after{
+    height: 100%;
+    background-color: #ff96ad;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
+
+/*======= button 4 =======*/
+.btn-4:hover{
+    box-shadow: 10px 10px 0 #ff96ad;
+    top: -5px;
+    left: -5px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
+
+/*======= button 5 =======*/
+.btn-5:hover{
+    border: 0.5px solid #ff96ad;
+    color: #ff96ad;
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
+
+/*======= button 6 =======*/
+.btn-6::after{
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    transition-duration: 0.5s;
+    width: 0;
+}
+.btn-6:hover::after{
+    width: 100%;
+    background-color: #ff96ad;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+/*========================*/
